@@ -1,0 +1,7 @@
+cargo:rerun-if-changed=/home/nosa/CSC_308/308 Project/Cargo.toml
+cargo:rustc-link-search=native=/home/nosa/CSC_308/308 Project/target/bootimage/bootloader/x86_64-bootloader/release/build/bootloader-7ff7e5493bfa8617/out
+cargo:rustc-link-lib=static=kernel_bin-blog_os
+cargo:rerun-if-env-changed=KERNEL
+cargo:rerun-if-env-changed=KERNEL_MANIFEST
+cargo:rerun-if-changed=/home/nosa/CSC_308/308 Project/target/x86_64-blog_os/debug/blog_os
+cargo:rerun-if-changed=build.rs
